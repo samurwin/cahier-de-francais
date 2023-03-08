@@ -1,0 +1,96 @@
+:root {
+  --primary: #15253D;
+  --secondary: #B80025;
+  --light: #EDEBE9;
+  --dark: #464035;
+  /* utility */
+  --danger: #99210E;
+  --danger-bg: #F5D5D0;
+  --success: #225835;
+  --success-bg: #D3DED7;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Typography */
+
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+p, a, li, button {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.txtPrimary {
+  color: var(--primary);
+}
+
+.txtSecondary {
+  color: var(--secondary);
+}
+
+.txtDark {
+  color: var(--dark);
+}
+
+.txtLight {
+  color: var(--light);
+}
+
+/* Colour */
+
+.bgPrimary {
+  background-color: var(--primary);
+}
+
+.bgSecondary {
+  background-color: var(--secondary);
+}
+
+.bgLight {
+  background-color: var(--light);
+}
+
+.bgDark {
+  background-color: var(--dark);
+}
+
+/* Spacing */
+
+.width100 {
+  width: 100%;
+}

@@ -23,13 +23,20 @@ export interface typeOfWord {
 
 export interface page {
   pageTitle: string;
+  path: string;
   content: typeOfWord[]
 }
 
 export interface section {
   title: string;
+  path: string;
   description: string[];
   pages: page[]
+}
+
+export interface course {
+  title: string;
+  sections: section[]
 }
 
 // 
@@ -40,6 +47,7 @@ export interface section {
 
 const nounsAndArticles: page = {
   pageTitle: "Nouns and Articles",
+  path: 'nouns-and-articles',
   content: [
      {
       name: "Nouns",
@@ -129,6 +137,7 @@ const nounsAndArticles: page = {
 
 const adjectives : page = {
   pageTitle: "Adjectives",
+  path: 'adjectives',
   content: [
     {
       name: "Adjective",
@@ -182,6 +191,7 @@ const adjectives : page = {
 
 const adverbs : page = {
   pageTitle: "Adverbs",
+  path: 'adverbs',
   content: [
     {
       name: "Adverbs",
@@ -214,6 +224,7 @@ const adverbs : page = {
 
 const verbs : page = {
   pageTitle: "Verbs",
+  path: 'verbs',
   content: [
     {
       name: "Verbs",
@@ -278,7 +289,8 @@ const verbs : page = {
 }
 
 const conjunctions : page = {
-  pageTitle: "Conjuntions",
+  pageTitle: "Conjunctions",
+  path: 'conjunctions',
   content: [
     {
       name: "Conjunctions",
@@ -298,6 +310,7 @@ const conjunctions : page = {
 
 const prepositions : page = {
   pageTitle: "Prepositions",
+  path: 'prepositions',
   content: [
     {
       name: "Prepositions",
@@ -338,6 +351,7 @@ const prepositions : page = {
 
 const pronouns : page = {
   pageTitle: "Pronouns",
+  path: 'pronouns',
   content: [
     {
       name: "Pronouns",
@@ -423,6 +437,7 @@ const pronouns : page = {
 
 export const vocabulary: section = {
   title: "Vocabulary",
+  path: 'vocabulary',
   description: [
     "Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.",
     "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
@@ -438,3 +453,44 @@ export const vocabulary: section = {
   ]
 }
 
+// Course
+
+export const courseOne: course = {
+  title: "Course One",
+  sections: [
+    vocabulary
+  ]
+}
+
+// Methods
+
+export function getSectionData(section:any) {
+  const sectionData = courseOne.sections.find(s => {
+    return s.path === section;
+  })
+
+  if(sectionData !== undefined) {
+    return sectionData;
+  } else {
+    console.log("No Section data found");
+    return;
+  }
+
+}
+
+export function getPageData(params:any) {
+  const sectionData = courseOne.sections.find(s => {
+    return s.path === params.section;
+  })
+  
+  if(sectionData !== undefined) {
+    const pageData = sectionData.pages.find(p => {
+      return p.path === params.page;
+    })
+
+    return pageData;
+    
+  } else {
+    console.log("No page found");
+  }
+}

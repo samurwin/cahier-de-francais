@@ -4,8 +4,8 @@ import './index.css'
 export default function Header() {
 
   return (
-    <header className="width100 bgPrimary">
-      <h3 className="semibold txtLight">Cahier de Français</h3>
+    <header className="width100">
+      <h3 className="semibold txtPrimary">Cahier de <span className='semibold txtSecondary'>Français</span></h3>
     </header>
   )
 }

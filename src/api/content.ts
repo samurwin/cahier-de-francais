@@ -140,7 +140,7 @@ const adjectives : page = {
   path: 'adjectives',
   content: [
     {
-      name: "Adjective",
+      name: "Adjectives",
       definition: {
         text: "Adjectives are words used to describe a noun."
       },

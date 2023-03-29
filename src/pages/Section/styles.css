@@ -1,0 +1,6 @@
+.topics {
+  padding: 1.5rem;
+  background-color: var(--primary);
+  border-radius: 5px;
+  max-width: 400px;
+}

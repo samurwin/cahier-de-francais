@@ -1,0 +1,39 @@
+.directoryCon {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding-top: 2rem;
+}
+
+.directoryCon > aside {
+  padding-right: 1rem;
+  border-right: solid 1px #E0E0E0;
+}
+
+.directoryList {
+  list-style: none;
+  padding-left: 2rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.sectionLink a {
+  font-weight: 600;
+  color: var(--secondary);
+  font-size: 21px;
+  transition: all 0.5s ease-in;
+}
+
+.sectionLink a:hover {
+  text-decoration: underline;
+}
+
+.pageLink a {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.pageLink {
+  margin: var(--spacing-two) 0;
+  font-weight: 500;
+}

@@ -1,0 +1,36 @@
+.hero {
+  width: 100%;
+  background: url('../../assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 1rem;
+}
+
+.heroTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  gap: 1.5rem;
+}
+
+.highlightCon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: -80px;
+  background: var(--light-blue);
+  border-radius: 5px;
+  padding: 4rem 0;
+}
+
+.highlightBox {
+  padding: 0 2rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.borders {
+  border-left: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+}

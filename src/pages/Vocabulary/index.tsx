@@ -62,7 +62,7 @@ export default function Vocabulary() {
               <div>
                 <h3>Rules</h3>
                 {word.rules?.map((rule, index) => (
-                  <div className="my-4">
+                  <div key={index} className="my-4">
                     <p className="bold txtSecondary">Rule {index + 1}:</p>
                     <p>{rule.definition}</p>
 

@@ -10,7 +10,7 @@ export default function Example(props:{examples:examplesArr}) {
       <p className="semibold mb-2">Example:</p>
 
       {props.examples.map(example => (
-        <p className="mb-1">{example}</p>
+        <p key={example} className="mb-1">{example}</p>
       ))}
     </div>
   )

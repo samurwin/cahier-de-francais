@@ -17,11 +17,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           {/* Section Routes */}
-            <Route path="/r/*" element={<Directory />} />
-            <Route path="r/:section" element={<Section/>}/>
-            <Route path="r/:section/:page" element={<Vocabulary/>} />
-            {/* <Route path="/:section"   element={<Section />} />
-            <Route path="/:section/:page" element={<Vocabulary />} /> */}
+            <Route path="r/" element={<Directory />}>
+              <Route path=":section" element={<Section/>}/>
+              <Route path=":section/:page" element={<Vocabulary/>} />
+            </Route>
         </Routes>
       </div>
     </Router>

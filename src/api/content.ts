@@ -60,16 +60,17 @@ const nounsAndArticles: page = {
           name: "Proper Noun",
           definition: "A proper noun is a specific name of a person, place, or thing.",
           examples: [
-            "Renee",
-            "Paris"
+            "Renee - Person",
+            "Paris - Place",
+            "Monalisa - Thing"
           ],
         },
         {
           name: "Common Noun",
           definition: "A common noun is the generic name of an item in a class or group.",
           examples: [
-            "Un chien",
-            "Un appartement"
+            "Un chien - A dog",
+            "Un appartement - An apartment"
           ],
         }
       ]
@@ -119,16 +120,16 @@ const nounsAndArticles: page = {
         {
           definition: "Nouns and articles agree in gender. The initial spelling determines how the word will change when changed into feminine.",
           examples: [
-            "Le directeur, la directrice",
-            "Un danseur, une danseuse"
+            "Le directeur, la directrice - The diretor",
+            "Un danseur, une danseuse - A dancer"
           ]
         },
         {
           definition: "Nouns and articles agree in number. There are certain changes made to both the noun and article depending on whether it is singular or plural.",
           examples: [
-            "Un chat, des chats",
-            "Un bateau, des bateaux",
-            "La orange, les oranges"
+            "un chat, des chats – A cat, some cats",
+            "Un bateau, des bateaux - A boat, some boats",
+            "La orange, les oranges - The orange, the oranges"
           ]
         }
       ]
@@ -165,24 +166,24 @@ const adjectives : page = {
         {
           definition: "The placement of adjectives in a sentence varies. Some of the most common adjectives come before the noun they’re describing. But most French adjectives are placed AFTER the noun they’re describing.",
           examples: [
-            "La petite fille",
-            "Un pantalon bleu"
+            "La petite fille - The small girl",
+            "Un pantalon bleu - A blue pant"
           ]
         },
         {
           definition: "Adjectives agree with the noun in gender and they must agree with the noun that they are describing. Most adjectives have a masculine and feminine form which are different but some are invariable.",
           examples: [
-            "Elle est amusante",
-            "Il est amusant",
-            "Une voiture rapide",
-            "Un train rapide"
+            "Elle est amusante - She is funny",
+            "Il est amusant - He is funny",
+            "Une voiture rapide - A fast car",
+            "Un train rapide - A fast train"
           ]
         },
         {
           definition: "Adjectives will reflect whether the noun that they are describing is singular or plural. Most end with a -s when plural. Adjectives ending with -s or -x are invariable.",
           examples: [
-            "Le livre rouge",
-            "Les tables rouges"
+            "Le livre rouge - The red book",
+            "Les tables rouges - The red tables"
           ]
         }
       ]
@@ -207,15 +208,15 @@ const adverbs : page = {
         {
           definition: "Adverbs don’t agree in gender or number; they’re invariable.",
           examples: [
-            "Elle mange lentement.",
-            "Il mange lentement."
+            "Elle mange lentement. - She is eating slowly",
+            "Il mange lentement. - He is eating slowly"
           ]
         },
         {
           definition: "Placement varies based on what the adverb is modifying. When adverbs are modifying verbs, they usually come after the verb. When adverbs are modifying adjectives or adverbs they come after the verb and before the adjective/adverb.",
           examples: [
-            "Je arrive bientot.",
-            "Il est vraiment beau."
+            "Je arrive bientot - I am arriving soon",
+            "Il est vraiment beau. - He is really beautiful"
           ]
         }
       ]
@@ -237,35 +238,35 @@ const verbs : page = {
           name: "ER Verbs",
           definition: "These verbs end in “er”.",
           examples: [
-            "Parler",
-            "Aller",
-            "Penser"
+            "Parler - To talk",
+            "Aller - To go",
+            "Penser - To think"
           ]
         },
         {
           name: "IR Verbs",
           definition: "These verbs end in “ir”",
           examples: [
-            "Couvrir",
-            "Ouvrir",
-            "Venir"
+            "Courir - To run",
+            "Ouvrir - To open",
+            "Venir - To come"
           ]
         },
         {
           name: "RE Verbs",
           definition: "These verbs end in “re”",
           examples: [
-            "Prendre",
-            "Apprendre",
-            "Comprendre"
+            "Prendre - To take",
+            "Apprendre - To learn",
+            "Comprendre - To understand"
           ]
         },
         {
           name: "Reflexive",
           definition: "Reflexive verbs are used to describe things you do regularly or changes of state that have an effect on oneself.",
           examples: [
-            "Se réveiller",
-            "Se coucher"
+            "Se réveiller - To get up",
+            "Se coucher - To sleep"
           ]
         }
       ],
@@ -273,9 +274,9 @@ const verbs : page = {
         {
           definition: "French verbs are split between three groups, depending on the spelling of their infinitive form and their behavior. ER, IR, RE",
           examples: [
-            "Regarder",
-            "Venir",
-            "Faire"
+            "Regarder - To look",
+            "Venir - To Come",
+            "Faire - To do"
           ]  
         },
         {
@@ -298,11 +299,11 @@ const conjunctions : page = {
       definition: {
         text: "Conjunctions are words we use to connect things in a sentence. They can be used to list things, set conditions, express causality, objection, or for expressing purpose.",
         examples: [
-          "Listing things: Des fruits et des légumes.",
-          "Setting conditions: Je ne bois pas, sinon je m’endors",
-          "Expressing causality: Je mange car j’ai faim",
-          "Objecting: Je mange du fromage mais pas de camembert.",
-          "Expressing purpose: Je médite pour me relaxer"
+          "Listing things: Des fruits et des légumes. - Some fruit and some vegetables",
+          "Setting conditions: Je ne bois pas de café, sinon je ne peux pas dormir - I don't drink coffee otherwise I cannot sleep",
+          "Expressing causality: Je mange car j’ai faim - I eat because I am hungry",
+          "Objecting: Je mange du fromage mais pas de camembert. - I am eating some cheese but no camambert",
+          "Expressing purpose: Je médite pour me relaxer - I meditate to relax"
         ]
       }
     }
@@ -318,31 +319,30 @@ const prepositions : page = {
       definition: {
         text: "Prepositions are words which tell us where or when something is in relation to something else. They describe direction, time, location, and spatial relationships, as well as other abstract types of relationships.",
         examples: [
-          "Dans",
-          "Devant",
-          "Avec"
+          "Dans - In",
+          "Devant - In front",
+          "Avec - With"
         ]
       },
       rules: [
         {
           definition: "Prepositions can be followed by a noun.",
           examples: [
-            "Le chat est dans le jardin.",
-            "Elle t’attendra devant la maison. "
+            "Le chat est dans le jardin. - The cat is in the garden",
+            "Elle t’attendre devant la maison. - She is waiting for you in front of the house"
           ]
         },
         {
           definition: "Prepositions can be followed by an infinitive verb.",
           examples: [
-            "Je me prépare à partir.",
-            "Il essaye de partir."
+            "Je me prépare à partir. - I am getting ready to leave"
           ]
         },
         {
           definition: "Prepositions can be followed by a stress pronoun.",
           examples: [
-            "On va chez moi?",
-            "Elle vient avec moi."
+            "On va chez moi? - Are you coming to my place?",
+            "Elle vient avec moi. - She is coming with me"
           ]
         }
       ]
@@ -441,8 +441,8 @@ export const vocabulary: section = {
   path: 'vocabulary',
   img: 'vocabulary-banner.jpg',
   description: [
-    "Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.",
-    "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
+    "This section is an introduction to French vocabulary. We will go over definitions, examples of and rules for the different types of words. Many of these will be familiar to you as they are the same types of words we use in English.",
+    "Concepts learned here will be expanded upon in future sections when you start to learn sentence structure, and tenses."
   ],
   pages: [
     nounsAndArticles,

@@ -13,6 +13,9 @@
   justify-content: center;
   min-height: 500px;
   gap: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
 .highlightCon {
@@ -28,6 +31,15 @@
   padding: 0 2rem;
   text-align: center;
   color: var(--primary);
+}
+
+.highlightBox a {
+  text-decoration: underline;
+  transition: all 0.2 ease-in-out;
+}
+
+.highlightBox a:hover {
+  opacity: 80%;
 }
 
 .borders {

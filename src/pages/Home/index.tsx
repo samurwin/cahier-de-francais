@@ -8,9 +8,9 @@ export default function Home() {
     <div id="home">
       <section className="hero">
         <div className="heroTxt">
-          <h1 className="txtLight">Bonjour! </h1>
-          <p className="txtLight">This website has a variety of reference materials for French grammar and vocabulary</p>
-          <Link to="/r/" className='btnSecondary'>Start Learning!</Link>
+          <h1 className="txtLight">Learn French Grammar</h1>
+          <p className="txtLight">This website has a variety of reference materials for French grammar and vocabulary. Made by a web developer who is learning french.</p>
+          <Link to="/grammar/" className='btnSecondary'>Start Learning!</Link>
         </div>
       </section>
 
@@ -18,7 +18,7 @@ export default function Home() {
         <div className="highlightCon">
           <div className="highlightBox">
             <h3 className="mb-2">Vocabulary</h3>
-            <Link to="/r/vocabulary">Start Learning &gt;</Link>
+            <Link to="/grammar/vocabulary">Start Learning &gt;</Link>
           </div>
 
           <div className="highlightBox borders">

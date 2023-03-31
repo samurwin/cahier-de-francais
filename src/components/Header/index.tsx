@@ -12,7 +12,7 @@ export default function Header() {
         </Link>
 
       <nav>
-        <Link to='/r/'>Directory</Link>
+        <Link to='/grammar/'>Grammar Reference</Link>
       </nav>
       </div>
     </header>

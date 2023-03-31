@@ -23,7 +23,7 @@ export default function Section() {
           </section>
           <section>
             {sectionData.description.map((p, index) => (
-              <p className="mb-1" key={index}>{p}</p>
+              <p className="mb-2" key={index}>{p}</p>
             ))}
           </section>
 

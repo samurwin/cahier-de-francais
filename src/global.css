@@ -26,6 +26,7 @@ body {
   background: var(--light);
   color: var(--dark);
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Typography */

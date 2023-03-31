@@ -1,11 +1,10 @@
 .directoryCon {
   display: grid;
   grid-template-columns: 25% 75%;
-  padding-top: 2rem;
 }
 
 .directoryCon > aside {
-  padding-right: 1rem;
+  padding: 2rem 1rem 2rem 0;
   border-right: solid 1px #E0E0E0;
 }
 

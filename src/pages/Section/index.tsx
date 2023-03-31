@@ -15,8 +15,13 @@ export default function Section() {
     <div>
       {sectionData ? (
         <div className="content">
+          <section className="imgBanner">
+              <img src={require(`../../assets/${sectionData.img}`)} alt=""/>
+              <div className="overlay">
+              <h1 className="txtLight">{sectionData.title}</h1>
+              </div>
+          </section>
           <section>
-            <h1 className="txtPrimary mb-4">{sectionData.title}</h1>
             {sectionData.description.map((p, index) => (
               <p className="mb-1" key={index}>{p}</p>
             ))}

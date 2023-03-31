@@ -30,6 +30,7 @@ export interface page {
 export interface section {
   title: string;
   path: string;
+  img: string;
   description: string[];
   pages: page[]
 }
@@ -438,6 +439,7 @@ const pronouns : page = {
 export const vocabulary: section = {
   title: "Vocabulary",
   path: 'vocabulary',
+  img: 'vocabulary-banner.jpg',
   description: [
     "Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.",
     "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."

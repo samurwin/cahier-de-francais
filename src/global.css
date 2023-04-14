@@ -1,14 +1,15 @@
 :root {
-  --primary: #15253D;
-  --secondary: #B80025;
   --light: #F0F4FA;
   --dark: #1B1B1B;
+  --dark-blue: #0C1C31;
+  --blue: #1E395C;
   --light-blue: #E0E9F5;
-  /* utility */
-  --danger: #99210E;
-  --danger-bg: #F5D5D0;
-  --success: #225835;
-  --success-bg: #D3DED7;
+  --red: #C0212B;
+  --light-red: #F3B9BD;
+  --yellow: #CC9900;
+  --light-yellow: #FFF5D6;
+  --purple: #470A5C;
+  --light-purple: #F3DAFB
   /* Spacing */
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -87,11 +88,11 @@ h1, h2, h3, h4, h5, p, a, li, button {
 }
 
 .txtPrimary {
-  color: var(--primary);
+  color: var(--blue);
 }
 
 .txtSecondary {
-  color: var(--secondary);
+  color: var(--red);
 }
 
 .txtDark {
@@ -103,7 +104,7 @@ h1, h2, h3, h4, h5, p, a, li, button {
 }
 
 .link {
-  color: var(--secondary);
+  color: var(--red);
   text-decoration: underline;
 }
 
@@ -113,7 +114,7 @@ h1, h2, h3, h4, h5, p, a, li, button {
 }
 
 .btnSecondary {
-  background: var(--secondary);
+  background: var(--red);
   padding: 0.75rem 1.5rem;
   border: none;
   outline: none;
@@ -124,17 +125,29 @@ h1, h2, h3, h4, h5, p, a, li, button {
 }
 
 .btnSecondary:hover {
-  outline: solid 2px var(--secondary);
+  outline: solid 2px var(--red);
 }
 
 /* Colour */
 
-.bgPrimary {
-  background-color: var(--primary);
+.bgBlue {
+  background-color: var(--blue);
 }
 
-.bgSecondary {
-  background-color: var(--secondary);
+.bgDarkBlue {
+  background-color: var(--dark-blue);
+}
+
+.bgLightBlue {
+  background-color: var(--light-blue);
+}
+
+.bgRed {
+  background-color: var(--red);
+}
+
+.bgLightRed {
+  background-color: var(--light-red);
 }
 
 .bgLight {
@@ -163,7 +176,7 @@ h1, h2, h3, h4, h5, p, a, li, button {
 
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 6.5rem auto;
 }
 
 /* MARGIN/PADDING UTILS */

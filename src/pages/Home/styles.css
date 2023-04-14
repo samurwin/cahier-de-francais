@@ -1,36 +1,36 @@
 .hero {
-  width: 100%;
-  background: url('../../assets/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+
+.heroImg {
+  min-width: 50%;
 }
 
 .heroTxt {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  min-height: 500px;
   gap: 1.5rem;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
 }
 
 .highlightCon {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: -80px;
-  background: var(--light-blue);
-  border-radius: 5px;
-  padding: 4rem 0;
+  background: var(--blue);
+  border-radius: 20px;
+  padding: 2.5rem 0;
 }
 
 .highlightBox {
   padding: 0 2rem;
   text-align: center;
-  color: var(--primary);
+  color: var(--light);
 }
 
 .highlightBox a {
@@ -43,6 +43,12 @@
 }
 
 .borders {
-  border-left: 1px solid var(--primary);
-  border-right: 1px solid var(--primary);
+  border-left: 1px solid var(--light);
+  border-right: 1px solid var(--light);
+}
+
+.noteFrom {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
 }

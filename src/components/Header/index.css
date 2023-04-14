@@ -15,10 +15,10 @@ header {
 nav a {
   font-weight: 600;
   font-size: 18px;
-  color: var(--primary);
+  color: var(--blue);
   transition: all .2s ease-in-out;
 }
 
 nav a:hover {
-  color: var(--secondary);
+  color: var(--red);
 }

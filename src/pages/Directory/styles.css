@@ -4,15 +4,19 @@
 }
 
 .directoryCon > aside {
-  padding: 2rem 1rem 2rem 0;
-  border-right: solid 1px #E0E0E0;
+  margin: 2rem auto;
+  height: 80vh;
+  padding: 1rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #fff;
+  position: sticky;
+  top: 2rem;
 }
 
 .directoryList {
   list-style: none;
-  padding-left: 2rem;
-  position: sticky;
-  top: 2rem;
+  padding-left: 1rem;
 }
 
 .sectionLink a {
@@ -35,4 +39,18 @@
 .pageLink {
   margin: var(--spacing-two) 0;
   font-weight: 500;
+}
+
+.sectionTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 21px;
+  height: auto;
+  color: var(--red);
 }

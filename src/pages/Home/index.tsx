@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div id="home">
-      <section className="hero container">
+      <section className="hero container conMargin">
         <div className="heroTxt">
           <h1 className="txtPrimary">Learn French Grammar</h1>
           <p className="txtDark">This website has a variety of reference materials for French grammar and vocabulary. Made by a web developer who is learning french.</p>
@@ -37,7 +37,7 @@ export default function Home() {
 
       </section>
 
-      <section className="container">
+      <section className="container conMargin">
         <div className="highlightCon">
           <div className="highlightBox">
             <h3 className="mb-3">Vocabulary</h3>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container noteFrom">
+      <section className="container noteFrom conMargin">
 
         <img src={require('../../assets/girl-with-book.png')} alt="Girl taking a nap with book on her face" />
 

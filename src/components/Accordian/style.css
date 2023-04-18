@@ -1,4 +1,4 @@
-.accordianCon {
+.accordianDarkCon {
   background: var(--blue);
   border-radius: 20px;
   color: var(--light);
@@ -13,9 +13,14 @@
   padding: 1rem 2.5rem;
 }
 
-.titleCon svg {
+.arrowSvg {
   height: 24px;
   width: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.arrowSvg.upsideDown {
+  transform: rotate(180deg);
 }
 
 .itemsCon {

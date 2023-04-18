@@ -3,6 +3,8 @@ import { Link, Outlet } from 'react-router-dom'
 import { courseOne } from '../../api/content'
 import './styles.css'
 
+import { IoIosArrowDown } from 'react-icons/io'
+
 export default function Directory() {
   const sections = courseOne.sections;
 
@@ -12,7 +14,10 @@ export default function Directory() {
         <ul className="directoryList">
           {sections.map(s => (
             <li key={s.path} className="sectionLink">
-              <Link to={s.path}>{s.title}</Link>
+              <div className="sectionTitle">
+                <Link to={s.path}>{s.title}</Link>
+                <IoIosArrowDown className={`arrow`}/>
+              </div>
               <ul className="directoryList">
                 {s.pages.map(page => (
                   <li key={page.path} className="pageLink">
@@ -27,5 +32,5 @@ export default function Directory() {
 
       <Outlet/>
     </div>
-  )
+  ) 
 }

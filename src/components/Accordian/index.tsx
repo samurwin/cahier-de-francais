@@ -12,12 +12,12 @@ export default function Accordian(props:{type:string, content:contentObj}) {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="accordianCon">
+    <div className="accordianDarkCon">
       {props.type === "links" ? (
         <>
           <div className="titleCon" onClick={() => setIsActive(!isActive)}>
             <h4>{props.content.title}</h4>
-            <IoIosArrowDown/>
+            <IoIosArrowDown className={`arrowSvg ${isActive ? 'upsideDown' : ''}`}/>
           </div>
 
           <div className={`itemsCon ${isActive ? "open" : ""}`}>

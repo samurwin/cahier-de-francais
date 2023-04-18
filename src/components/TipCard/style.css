@@ -1,0 +1,8 @@
+.tipCard {
+  padding: 1rem 1.5rem;
+  background-color: var(--light-yellow);
+  border-left: 10px solid var(--yellow);
+  border-radius: 10px;
+  width: fit-content;
+  min-width: 50%;
+}

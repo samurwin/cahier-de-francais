@@ -624,7 +624,7 @@ const question : page = {
       {
         heading: "Question Words",
         text: ["If you are looking for more than a yes or no answer, it’s more than likely that you will need to use a question word. In French, question words typically come at the beginning of the sentence, and are followed by the inverted subject-verb group. They can also come at the end of a basic sentence."],
-        table: ""
+        table: "<div><table><colgroup><col><col><col></colgroup><tbody><tr><td><p>Qui</p></td><td><p>Who</p></td><td><p>Qui es-tu? – Who are you?</p></td</tr><tr><td><p>Que</p></td><td><p>What</p></td><td><p>Que fais-tu? – What are you doing?</p></td></tr><tr><td><p>Quoi</p></td><td><p>What</p></td><td><p>Où vas-tu? – Where are you going?</p></td></tr><tr><td><p>Où</p></td><td><p>Where</p></td><td><p>Où vas-tu? – Where are you going?</p></td></tr><tr><td><p>Comment</p></td><td><p>How</p></td><td><p>Comment vas-tu? How are you doing?</p></td></tr><tr><td><p>Pourquoi</p></td><td><p>Why</p></td><td><p>Pourquoi attendez-vous ici? – Why are you waiting here?</p></td></tr><tr><td><p>Combien</p></td><td><p>How much</p></td><td><p>Combien ça coute? – How much is that?</p></td></tr><tr><td><p>Quel/Quelle</p></td><td><p>Which</p></td><td><p>Quel est ta voiture? – Which is your car?</p></td></tr><tr><td><p>Quand</p></td><td><p>When</p></td><td><p>Quand allons-nous au ciné? – When do we going to the movies?</p></td></tr></tbody></table></div>"
       }
     ]
   }
@@ -654,7 +654,7 @@ const negation : page = {
           "Je ne montre aucun dessin à ma mère. – I don’t show any drawing to my mother.",
           "Il n’y a plus de bière. – There isn’t any more beer."
         ],
-        table: "",
+        table: "<div><table><colgroup><col><col><col></colgroup><tbody><tr><td><p>Non</p></td><td><p>No</p></td><td><p>Non, merci – No thank you </p></td></tr><tr><td><p>Jamais</p></td><td><p>Never</p></td><td><p>Tu ne sors jamais avec nous. – You never go out with us. </p></td></tr><tr><td><p>Personne</p></td><td><p>No one</p></td><td><p>Je n'écoute personne. – I don't listen to anyone.</p></td></tr><tr><td><p>Rien</p></td><td><p>Nothing</p></td><td><p>Je ne mange rien. – I don't eat anything.</p></td></tr><tr><td><p>Aucun(e)</p></td><td><p>None/Not any</p></td><td><p>Tu n'as aucun idée. – You have no idea</p></td></tr><tr><td><p>Nulle part</p></td><td><p>Nowhere</p></td><td><p>Je ne vais nulle part. – I'm not going anywhere. </p></td></tr><tr><td><p>Ne … plus</p></td><td><p>Not anymore</p></td><td><p>Je ne sais plus – I don't know anymore</p></td></tr><tr><td><p>Ni … ni</p></td><td><p>Neither … nor</p></td><td><p>Ni oui, ni non. – Neither yes, nor no,</p></td></tr></tbody></table></div>",
         tipCards: [
           {
             heading: "Using undefined articles in negative sentences.",

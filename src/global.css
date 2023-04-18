@@ -9,7 +9,7 @@
   --yellow: #CC9900;
   --light-yellow: #FFF5D6;
   --purple: #470A5C;
-  --light-purple: #F3DAFB
+  --light-purple: #F3DAFB;
   /* Spacing */
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -167,15 +167,19 @@ h1, h2, h3, h4, h5, p, a, li, button {
 .content {
   width: 100%;
   max-width: 800px;
-  padding: 2rem 0 2rem 4rem;
+  padding: 4rem 0 2rem 4rem;
 }
 
 .sectionSpacing {
-  margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 .container {
   max-width: 1200px;
+  margin: auto;
+}
+
+.conMargin {
   margin: 6.5rem auto;
 }
 

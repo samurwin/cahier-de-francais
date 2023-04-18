@@ -9,7 +9,7 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import Directory from './pages/Directory'
 import Section from './pages/Section';
-import Vocabulary from './pages/Vocabulary';
+import ContentPage from './pages/ContentPage';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
             <Route path="grammar/" element={<Directory />}>
               <Route path=":section" element={<Section/>}/>
-              <Route path=":section/:page" element={<Vocabulary/>} />
+              <Route path=":section/:page" element={<ContentPage/>} />
             </Route>
         </Routes>
         {/* <Footer/> */}

@@ -52,3 +52,20 @@
   flex-direction: row;
   gap: 5rem;
 }
+
+.resourcesAcc {
+  border-radius: 20px;
+  width: 75%;
+}
+
+.resourcesAcc > .titleCon {
+  padding: 1rem 2.5rem;
+}
+
+.resourcesAcc > .itemsCon {
+  border-radius: 0 0 20px 20px;
+}
+
+.resourcesAcc > .itemsCon.open {
+  padding: 1rem 2.5rem;
+}

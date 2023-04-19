@@ -5,7 +5,7 @@ import './styles.css'
 import Accordian from '../../components/Accordian'
 
 const linkAccordianContent = {
-  title: "Resources Used",
+  title: {text:"Resources Used"},
   items: [
     {
       label: "French Pod 101",
@@ -73,7 +73,7 @@ export default function Home() {
             so I lean heavily on outside resources to create my content. I list the resources I use below.
           </p>
 
-          <Accordian type="links" content={linkAccordianContent} />
+          <Accordian type="links" content={linkAccordianContent} theme="multi-blue" style="resourcesAcc" />
         </div>
       </section>
     </div>

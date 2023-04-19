@@ -158,6 +158,10 @@ h1, h2, h3, h4, h5, p, a, li, button {
   background-color: var(--dark);
 }
 
+.bgWhite {
+  background-color: #fff;
+}
+
 /* Spacing */
 
 .width100 {

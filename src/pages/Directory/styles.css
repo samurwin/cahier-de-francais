@@ -12,17 +12,28 @@
   background: #fff;
   position: sticky;
   top: 2rem;
+  overflow-y: scroll;
+}
+
+.directoryCon > aside::-webkit-scrollbar {
+  background: none;
+  width: 2px;
+}
+
+.directoryCon > aside::-webkit-scrollbar-thumb {
+  background: var(--blue);
 }
 
 .directoryList {
   list-style: none;
-  padding-left: 1rem;
+  padding-left: 0;
+}
+
+.sectionLink {
+  margin: 1rem 0;
 }
 
 .sectionLink a {
-  font-weight: 600;
-  color: var(--red);
-  font-size: 21px;
   transition: all 0.5s ease-in;
 }
 
@@ -30,27 +41,8 @@
   text-decoration: underline;
 }
 
-.pageLink a {
-  color: var(--blue);
+.pageLink > .itemsCon > a {
   font-weight: 500;
   font-size: 16px;
-}
-
-.pageLink {
-  margin: var(--spacing-two) 0;
-  font-weight: 500;
-}
-
-.sectionTitle {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.arrow {
-  width: 21px;
-  height: auto;
-  color: var(--red);
+  padding-left: 1rem;
 }

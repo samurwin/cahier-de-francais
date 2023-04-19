@@ -1,27 +1,24 @@
 .hero {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   align-items: center;
   gap: 5rem;
   padding: 0 1rem;
 }
 
-.heroImg {
-  min-width: 50%;
-}
-
 .heroTxt {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  text-align: center;
 }
 
 .highlightCon {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-gap: 2.5rem;
   background: var(--blue);
   border-radius: 20px;
   padding: 2.5rem 0;
@@ -49,13 +46,17 @@
 
 .noteFrom {
   display: flex;
-  flex-direction: row;
-  gap: 5rem;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.noteFrom img {
+  height: 100%;
+  width: auto;
 }
 
 .resourcesAcc {
   border-radius: 20px;
-  width: 75%;
 }
 
 .resourcesAcc > .titleCon {
@@ -68,4 +69,41 @@
 
 .resourcesAcc > .itemsCon.open {
   padding: 1rem 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heroTxt {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero img {
+    min-width: 50%;
+  }
+
+  .highlightCon {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+  }
+
+  .noteFrom img {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .noteFrom {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .resourcesAcc {
+    width: 75%;
+  }
 }

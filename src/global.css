@@ -53,7 +53,7 @@ h3 {
 h4 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 26px;
 }
 
 p, a, li, button {
@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, p, a, li, button {
 .content {
   width: 100%;
   max-width: 800px;
-  padding: 4rem 0 2rem 4rem;
+  padding: 4rem 0 2rem 0.5rem;
 }
 
 .sectionSpacing {
@@ -181,10 +181,20 @@ h1, h2, h3, h4, h5, p, a, li, button {
 .container {
   max-width: 1200px;
   margin: auto;
+  padding: 0 0.5rem;
 }
 
 .conMargin {
   margin: 6.5rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 4rem 0 2rem 4rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
 }
 
 /* MARGIN/PADDING UTILS */

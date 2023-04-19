@@ -1,11 +1,26 @@
 .directoryCon {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 15% 85%;
+}
+
+.directoryIcon {
+  padding: 0;
+  height: 1.5rem;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.directoryIcon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--blue);
 }
 
 .directoryCon > aside {
   margin: 2rem auto;
-  height: 80vh;
+  height: fit-content;
   padding: 1rem;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -25,12 +40,15 @@
 }
 
 .directoryList {
-  list-style: none;
-  padding-left: 0;
+  display: none;
 }
 
-.sectionLink {
-  margin: 1rem 0;
+.directoryList.open {
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  z-index: 1;
+  width: 85vw;
 }
 
 .sectionLink a {
@@ -45,4 +63,28 @@
   font-weight: 500;
   font-size: 16px;
   padding-left: 1rem;
+}
+
+.pageLink > .titleCon {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .directoryCon {
+    grid-template-columns: 25% 75%;
+  }
+
+  .directoryCon > aside {
+    height: 80vh;
+  }
+
+  .directoryList {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .directoryIcon {
+    display: none;
+  }
 }

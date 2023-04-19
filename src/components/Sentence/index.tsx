@@ -11,7 +11,7 @@ export default function Sentence(props:{content:sentence}) {
 
       {data.parts.map((part, index) => (
         <section className="sectionSpacing" key={index}>
-          <h2 className="txtSecondary">{part.heading}</h2>
+          <h3 className="txtSecondary">{part.heading}</h3>
 
           <div className="my-3">
             {part.text.map((para, index) => (

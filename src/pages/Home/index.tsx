@@ -46,11 +46,11 @@ export default function Home() {
 
           <div className="highlightBox">
             <h3 className="mb-3">Sentance Structure</h3>
-            <p>Coming Soon!</p>
+            <Link to="/grammar/sentence-structure">Start Learning &gt;</Link> 
           </div>
 
           <div className="highlightBox">
-            <h3 className="mb-3">Conjugation</h3>
+            <h3 className="mb-3">Verbs & Tenses</h3>
             <p>Coming Soon!</p>
           </div>
         </div>

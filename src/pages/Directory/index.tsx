@@ -1,11 +1,20 @@
-import React from 'react'
+import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { courseOne, page } from '../../api/content'
 import './styles.css'
 
+import { TfiMenuAlt } from 'react-icons/tfi'
+import { RiCloseFill } from 'react-icons/ri'
 import Accordian from '../../components/Accordian'
 
 export default function Directory() {
+  const [directoryOpen, setDirectoryOpen] = useState(false);
+
+
+  function handleToggle() {
+    setDirectoryOpen(!directoryOpen);
+  }
+
   const sections = courseOne.sections;
 
   function createLinkList(sectionPath:string, sectionPages: page[]) {
@@ -21,11 +30,19 @@ export default function Directory() {
     })
     return links;
   }
+
   return(
-    <div className="directoryCon px-3 container">
+    <div className="directoryCon container">
       <aside>
-        <ul className="directoryList">
-          {sections.map(s => { 
+        <button onClick={handleToggle} className="directoryIcon">
+          {directoryOpen ? (
+            <RiCloseFill />
+          ): (
+            <TfiMenuAlt/>
+          )}
+        </button>
+        <ul className={`directoryList ${directoryOpen ? "open" : ""}`}>
+          {sections.map((s, index) => { 
             let links = createLinkList(s.path, s.pages);
 
             const accordianContent = {
@@ -36,7 +53,7 @@ export default function Directory() {
               items: links
             }
             return (
-              <li key={s.path} className="sectionLink">
+              <li key={s.path} className={index === 0 ? "mb-3" : ""}>
                 <Accordian type="links" content={accordianContent} theme="light" style="pageLink" />
             </li>
           )})}

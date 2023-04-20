@@ -1,0 +1,106 @@
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+
+.heroTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.highlightCon {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.5rem;
+  background: var(--blue);
+  border-radius: 20px;
+  padding: 2.5rem 0;
+}
+
+.highlightBox {
+  padding: 0 2rem;
+  text-align: center;
+  color: var(--light);
+}
+
+.highlightBox a {
+  text-decoration: underline;
+  transition: all 0.2 ease-in-out;
+}
+
+.highlightBox a:hover {
+  opacity: 80%;
+}
+
+.borders {
+  border-left: 1px solid var(--light);
+  border-right: 1px solid var(--light);
+}
+
+.noteFrom {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.noteFrom img {
+  height: 100%;
+  width: auto;
+}
+
+.resourcesAcc {
+  border-radius: 20px;
+}
+
+.resourcesAcc > #titleCon {
+  padding: 1rem 2.5rem;
+}
+
+.resourcesAcc > #itemsCon {
+  border-radius: 0 0 20px 20px;
+  padding: 1rem 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heroTxt {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero img {
+    min-width: 50%;
+  }
+
+  .highlightCon {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+  }
+
+  .noteFrom img {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .noteFrom {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .resourcesAcc {
+    width: 75%;
+  }
+}

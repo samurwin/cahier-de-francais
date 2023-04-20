@@ -1,0 +1,30 @@
+.titleCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrowSvg {
+  height: 24px;
+  width: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.arrowSvg.upsideDown {
+  transform: rotate(180deg);
+}
+
+.itemsCon {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  transition: height ease 0.2s;
+}
+
+.itemsCon.open {
+  display: flex;
+}

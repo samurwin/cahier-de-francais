@@ -64,7 +64,7 @@ export default function Home() {
           <h3 className="txtPrimary mb-4">A note from the creator</h3>
 
           <p className="mb-2">
-            I am a web developer who also happens to be learning french! My family is French-Canadian and although my mom moved to Ontario 
+            I am a web developer who also happens to be learning french! My family is French-Canadian and although my mom moved to Ontario when she was quite young  
             and didn’t maintain the French that she knew from her childhood, it is very much a part of our family and it’s history. For that 
             reason I began learning french a year ago.
           </p>

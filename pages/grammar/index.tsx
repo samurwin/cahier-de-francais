@@ -31,7 +31,7 @@ export default function Grammar({children}:any) {
   }
 
   return(
-    <div className={`container ${styles.directoryCon}`}>
+    <div className={`container ${styles.directoryCon} ${directoryOpen ? styles.openCon : ""}`}>
       <aside>
         <button onClick={handleToggle} className={styles.directoryIcon}>
           {directoryOpen ? (

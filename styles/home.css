@@ -6,6 +6,11 @@
   padding: 0 1rem;
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
 .heroTxt {
   display: flex;
   flex-direction: column;

@@ -29,6 +29,12 @@
   position: sticky;
   top: 2rem;
   overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.directoryCon.openCon > aside {
+  z-index: 1;
+  width: 85vw;
 }
 
 .directoryCon > aside::-webkit-scrollbar {
@@ -48,8 +54,6 @@
   display: block;
   list-style: none;
   padding-left: 0;
-  z-index: 1;
-  width: 85vw;
 } 
 
 .sectionLink a {

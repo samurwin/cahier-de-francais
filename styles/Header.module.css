@@ -17,6 +17,9 @@
   font-size: 18px;
   color: var(--blue);
   transition: all .2s ease-in-out;
+  text-align: right;
+  width: 100%;
+  display: block;
 }
 
 .nav a:hover {

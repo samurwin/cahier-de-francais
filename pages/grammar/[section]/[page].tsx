@@ -20,7 +20,7 @@ export default function ContentPage() {
             <h1 className="txtPrimary">{pageData.pageTitle}</h1>
 
             {pageData.content ? (
-              <Vocabulary content={pageData.content} />
+              <Vocabulary content={pageData.content} pageTitle={pageData.pageTitle} />
             ): pageData.sentence ?(
               <Sentence content={pageData.sentence} />
             ): (

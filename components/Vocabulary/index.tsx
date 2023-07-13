@@ -2,18 +2,18 @@ import { typeOfWord } from '../../api/content'
 import Example from '../Example';
 import styles from '../../styles/Vocabulary.module.css'
 
-export default function Vocabulary(props:{ content:typeOfWord[] }) {
+export default function Vocabulary(props:{ content:typeOfWord[], pageTitle:string }) {
 
   return (
     <>
       {/* Type of Words */}
       {props.content.map((word, index) => (
         <section className="sectionSpacing" key={index}>
-          {/* {word.heading === pageData.pageTitle ? (
+           {word.heading === props.pageTitle ? (
             <></>
-          ): ( */}
-            <h2 className="txtSecondary mb-2">{word.heading}</h2>
-          {/* )} */}
+          ): ( 
+            <h2 className="mb-2">{word.heading}</h2>
+           )}
 
           {/* Definition */}
           <div>
@@ -26,7 +26,7 @@ export default function Vocabulary(props:{ content:typeOfWord[] }) {
           {/* Types Of */}
           {word.typesOf?.length ? (
             <div className="my-5">
-              <h3>Types of {word.heading}</h3>
+              <h3 className="txtRed">Types of {word.heading}</h3>
 
               {word.typesOf?.map((typeOf) => (
                 <div key={typeOf.heading} className="my-4">

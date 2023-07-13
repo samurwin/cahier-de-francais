@@ -1,13 +1,18 @@
-.table > table td {
+.table table {
   border-collapse: collapse;
-  border: 1px solid;
+  border: 1px solid var(--txt-color);
+}
+
+.table td {
+  border-collapse: collapse;
+  border: 1px solid var(--txt-color);
 }
 
 .table > tbody {
   border-radius: 5px;
 }
 
-.table > td {
-  padding: 15px;
+.table td {
+  padding: 0.5rem;
   text-align: left;
 }

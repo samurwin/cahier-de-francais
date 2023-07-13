@@ -6,4 +6,5 @@
   margin: 1rem 0;
   width: fit-content;
   min-width: 50%;
+  color: var(--dark);
 }

@@ -23,9 +23,38 @@
   --spacing-ten: 5rem;
 }
 
+:root{
+  --bg-main: #F8FAFD;
+  --txt-color: #1B1B1B;
+  --headings: #1E395C;
+  --txt-inverse: #E0E9F5;
+  --bg-secondary: #1E395C;
+  --bg-tertiary: #0C1C31;
+}
+
+html[data-theme='light']{
+  --bg-main: #F8FAFD;
+  --txt-color: #1B1B1B;
+  --headings: #1E395C;
+  --txt-inverse: #E0E9F5;
+  --bg-secondary: #1E395C;
+  --bg-tertiary: #0C1C31;
+  --accordian-solid: #FFFFFF;
+}
+
+html[data-theme='dark']{
+  --bg-main: #0C1C31;
+  --txt-color: #F8FAFD;
+  --headings: #F8FAFD;
+  --txt-inverse: #0C1C31;
+  --bg-secondary: #E0E9F5;
+  --bg-tertiary: #F8FAFD;
+  --accordian-solid: #1E395C;
+}
+
 body {
-  background: var(--light);
-  color: var(--dark);
+  background: var(--bg-main);
+  color: var(--txt-color);
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
@@ -71,6 +100,10 @@ h1, h2, h3, h4, h5, p, a, li, button {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5 {
+  color: var(--headings);
+}
+
 .italic {
   font-style: italic;
 }
@@ -85,22 +118,6 @@ h1, h2, h3, h4, h5, p, a, li, button {
 
 .bold {
   font-weight: 700;
-}
-
-.txtPrimary {
-  color: var(--blue);
-}
-
-.txtSecondary {
-  color: var(--red);
-}
-
-.txtDark {
-  color: var(--dark);
-}
-
-.txtLight {
-  color: var(--light);
 }
 
 .link {

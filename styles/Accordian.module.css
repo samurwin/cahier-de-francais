@@ -28,3 +28,23 @@
 .itemsCon.open {
   display: flex;
 }
+
+.multiItemCon {
+  background: var(--bg-tertiary);
+}
+
+.multiAccordianCon {
+  background: var(--bg-secondary);
+}
+
+.txtInverse {
+  color: var(--txt-inverse) !important;
+}
+
+.txtColor {
+  color: var(--headings);
+}
+
+.solidAccordian {
+  background: var(--accordian-solid);
+}

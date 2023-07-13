@@ -33,7 +33,7 @@ export default function Home() {
           <Link href="/grammar/" className='btnSecondary'>Start Learning!</Link>
         </div>
 
-        <Image src={require('../public/assets/caheir-de-francais-hero.png')} alt="Woman biting pencil while studying" />
+        <Image src={require('../public/assets/caheir-de-francais-hero.png')} alt="Woman biting pencil while studying" priority={true} />
 
       </section>
 
@@ -61,7 +61,7 @@ export default function Home() {
         <Image src={require('../public/assets/girl-with-book.png')} alt="Girl taking a nap with book on her face" />
 
         <div className="noteTxt">
-          <h3 className="txtPrimary mb-4">A note from the creator</h3>
+          <h3 className="mb-4">A note from the creator</h3>
 
           <p className="mb-2">
             I am a web developer who also happens to be learning french! My family is French-Canadian and although my mom moved to Ontario when she was quite young  
@@ -73,7 +73,7 @@ export default function Home() {
             so I lean heavily on outside resources to create my content. I list the resources I use below.
           </p>
 
-          <Accordian type="links" content={linkAccordianContent} theme="multi-blue" style="resourcesAcc" />
+          <Accordian type="links" content={linkAccordianContent} theme="multi" style="resourcesAcc" />
         </div>
       </section>
     </div>

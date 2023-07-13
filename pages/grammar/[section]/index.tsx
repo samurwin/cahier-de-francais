@@ -18,7 +18,7 @@ export default function Section() {
         {sectionData ? (
           <div className="content">
             <section className={styles.imgBanner}>
-                <Image src={require(`../../../public/assets/${sectionData.img}`)} alt=""/>
+                <Image src={require(`../../../public/assets/${sectionData.img}`)} alt="" priority={true} />
                 <div className={styles.overlay}>
                 <h1 className="txtLight">{sectionData.title}</h1>
                 </div>

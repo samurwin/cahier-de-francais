@@ -11,7 +11,7 @@ type contentObj = {
   items: any[]
 }
 
-type theme = "multi-blue" | "multi-light" | "blue" | "light";
+type theme = "multi" | "solid";
 
 export default function Accordian(props:{type:string, content:contentObj, theme:theme, style?:string}) {
   const [isActive, setIsActive] = useState(false);
@@ -21,25 +21,15 @@ export default function Accordian(props:{type:string, content:contentObj, theme:
   let txtColor = "";
 
   switch(props.theme){
-    case "multi-blue":
-      itemConColor = "bgDarkBlue";
-      accordianConColor = "bgBlue";
-      txtColor = "txtLight";
+    case "multi":
+      itemConColor = styles.multiItemCon;
+      accordianConColor = styles.multiAccordianCon;
+      txtColor = styles.txtInverse;
       break;
-    case "multi-light":
-      itemConColor = "bgLight";
-      accordianConColor = "bgLightBlue";
-      txtColor = "txtPrimary";
-      break;
-    case "blue":
-      itemConColor = "bgBlue";
-      accordianConColor = "bgBlue";
-      txtColor = "bgLight";
-      break;
-    case "light":
-      itemConColor = "bgWhite";
-      accordianConColor = "bgWhite";
-      txtColor = "txtPrimary";
+    case "solid":
+      itemConColor = styles.solidAccordian;
+      accordianConColor = styles.solidAccodian;
+      txtColor = styles.txtColor;
       break;
   }
 
@@ -50,9 +40,9 @@ export default function Accordian(props:{type:string, content:contentObj, theme:
           <div id="titleCon" className={`${styles.titleCon} ${txtColor}`} onClick={() => setIsActive(!isActive)}>
             {props.content.title.link ? (
               <Link href={props.content.title.link}>
-                <h4>{props.content.title.text}</h4>
+                <h4 className={txtColor}>{props.content.title.text}</h4>
               </Link>
-            ): <><h4>{props.content.title.text}</h4></> }
+            ): <><h4 className={txtColor}>{props.content.title.text}</h4></> }
 
             <IoIosArrowDown className={`${styles.arrowSvg} ${isActive ? styles.upsideDown : ""}`}/>
           </div>

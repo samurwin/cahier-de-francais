@@ -5,4 +5,5 @@
   border-radius: 10px;
   width: fit-content;
   min-width: 50%;
+  color: var(--dark);
 }

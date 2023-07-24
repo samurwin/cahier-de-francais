@@ -25,7 +25,7 @@
   padding: 1rem;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background: #fff;
+  background: var(--accordian-solid);
   position: sticky;
   top: 2rem;
   overflow-y: scroll;

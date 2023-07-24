@@ -54,7 +54,7 @@ export default function Grammar({children}:any) {
             }
             return (
               <li key={s.path} className={index === 0 ? "mb-3" : ""}>
-                <Accordian type="links" content={accordianContent} theme="light" style={styles.pageLink} />
+                <Accordian type="links" content={accordianContent} theme="solid" style={styles.pageLink} />
             </li>
           )})}
         </ul>

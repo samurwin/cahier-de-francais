@@ -24,15 +24,15 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2.5rem;
-  background: var(--blue);
+  background: var(--bg-secondary);
   border-radius: 20px;
   padding: 2.5rem 0;
 }
 
-.highlightBox {
+.highlightBox, .highlightBox > h3 {
   padding: 0 2rem;
   text-align: center;
-  color: var(--light);
+  color: var(--txt-inverse);
 }
 
 .highlightBox a {

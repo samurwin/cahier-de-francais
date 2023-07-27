@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
+import { Helmet } from 'react-helmet'
 
 import Accordian from '../components/Accordian'
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { useRouter } from 'next/router'
 import { getSectionData } from '../../../api/content'
 import Image from 'next/image';
@@ -14,6 +15,9 @@ export default function Section() {
 
   return (
     <Grammar>
+      <Helmet>
+        {sectionData ? (<title>{sectionData.title} | Cahier de Français</title>): ''}
+      </Helmet>
       <div>
         {sectionData ? (
           <div className="content">

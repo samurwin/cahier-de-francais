@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { Helmet } from 'react-helmet'
 
 import { getPageData } from '../../../api/content'
 import Vocabulary from '../../../components/Vocabulary';
@@ -13,6 +14,9 @@ export default function ContentPage() {
 
   return (
     <Grammar>
+      <Helmet>
+        {pageData ? (<title>{pageData.pageTitle} | Cahier de Francais</title>) : ''}
+      </Helmet>
       <div>
         {pageData ? (
           <div className="content">

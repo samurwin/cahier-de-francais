@@ -27,11 +27,6 @@ export default function Home() {
 
   return (
     <div id="home">
-      <Helmet>
-        <title>Cahier de Français</title>
-        <meta name="description" content="Learn French Grammar! This website has a variety of reference materials for French grammar and vocabulary. Made by a web developer who is learning french."></meta>
-      </Helmet>
-
       <section className="hero container conMargin">
         <div className="heroTxt">
           <h1 className="txtPrimary">Learn French Grammar</h1>

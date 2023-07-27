@@ -15,7 +15,7 @@ export default function ContentPage() {
   return (
     <Grammar>
       <Helmet>
-        <title>pageData.pageTitle | Cahier de Français</title>
+        {pageData ? (<title>pageData.pageTitle | Cahier de Francais</title>) : ''}
       </Helmet>
       <div>
         {pageData ? (

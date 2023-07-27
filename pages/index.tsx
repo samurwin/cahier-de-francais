@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
+import { Helmet } from 'react-helmet'
 
 import Accordian from '../components/Accordian'
 
@@ -26,6 +27,10 @@ export default function Home() {
 
   return (
     <div id="home">
+      <Helmet>
+        <title>Cahier de Français</title>
+      </Helmet>
+
       <section className="hero container conMargin">
         <div className="heroTxt">
           <h1 className="txtPrimary">Learn French Grammar</h1>

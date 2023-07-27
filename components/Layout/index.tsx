@@ -11,6 +11,7 @@ export default function Layout({children}:any) {
         <title>Cahier de Français</title>
         <meta name="description" content="Learn French Grammar! This website has a variety of reference materials for French grammar and vocabulary. Made by a web developer who is learning french."></meta>
       </Helmet>
+      
       <Header/>
       {children}
     </ScrollToTop>

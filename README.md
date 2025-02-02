@@ -2,7 +2,7 @@
 
 This website has a variety of reference materials for French grammar and vocabulary. Made by a web developer who is learning french.
 
-[Check out the website here!](https://cahier-de-francais.herokuapp.com/)
+[Check out the website here!](https://cahier-de-francais.vercel.app/)
 
 ## Stack
 
